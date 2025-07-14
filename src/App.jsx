@@ -1,35 +1,33 @@
-import React, { useState } from 'react'
-import Header from './components/Header'
-import Navbar from './components/Navbar'
-import MaverickSection from './components/MaverickSection'
-import ScrollCategories from './components/CategorySlide'
-import TalktoQPIXX from './components/TalktoQPIXX'
-import InvestmentForm from './components/InvestmentForm'
-import ClientConfidence from './components/ClientConfidence'
-import Testimonial from './components/Testimonials'
-import Footer from './components/Footer'
-import OurOfferings from './components/OurOfferings'
-import TheProcess from './components/TheProcess'
-import WhyChoose from './components/WhyChoose'
+// src/App.jsx
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './page/Homepage'
+import PrivacyPolicy from './page/PrivacyPolicy'
+import TermsAndConditions from './page/TermsAndConditions'
+import RefundPolicy from './page/RefundPolicy'
+import ContactUs from './page/ContactUs'
+import CapitalMarketing from './page/CapitalMarketing'
+import Leasing from './page/Leasing'
+import Properties from './page/Properties.jsx'
+import AssetManagement from './page/AssetManagement'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header />
-      <Navbar />
-      <MaverickSection />
-      {/* <ScrollCategories /> */}
-      <OurOfferings />
-      <WhyChoose />
-      <TalktoQPIXX />
-      <TheProcess />
-      <InvestmentForm />
-      <ClientConfidence />
-      <Testimonial />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-condition" element={<TermsAndConditions />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/capital-marketing" element={<CapitalMarketing />} />
+        <Route path="/leasing" element={<Leasing />} />
+        <Route path="/properties" element={<Properties />} />
+        <Route path="/asset-management" element={<AssetManagement />} />
+        {/* You can add more routes here */}
+      </Routes>
+    </Router>
   )
 }
 

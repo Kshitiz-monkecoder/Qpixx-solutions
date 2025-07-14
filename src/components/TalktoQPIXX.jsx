@@ -26,7 +26,7 @@ const TalktoQPIXX = () => {
             You'll be connected with an expert <br className="hidden sm:inline" /> no pressure or obligations.
           </p>
 
-          <button className="mt-4 bg-[#0B1D27] hover:bg-[#112f3a] text-white py-2 px-6 md:py-3 md:px-8 md:text-xl text-base rounded-full shadow-md transition-all duration-300">
+          <button className="mt-4 bg-[#0B1D27] cursor-pointer hover:bg-[#112f3a] text-white py-2 px-6 md:py-3 md:px-8 md:text-xl text-base rounded-full shadow-md transition-all duration-300">
             Book Consultation
           </button>
         </div>

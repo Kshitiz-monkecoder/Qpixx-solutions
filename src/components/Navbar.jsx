@@ -15,7 +15,7 @@ const Navbar = () => {
               className="w-full h-full object-cover"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D27]/60 via-[#0B1D27]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D27]/70 via-[#0B1D27]/50 to-transparent" />
         </div>
 
         {/* Content */}
@@ -25,8 +25,15 @@ const Navbar = () => {
               Real Estate <br className="hidden sm:inline" /> Made Easy.
             </h1>
             <p className="text-[#D9D9D9] mb-4 text-sm sm:text-base leading-relaxed">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium hic possimus perspiciatis <br className="hidden sm:inline" />
-              optio non error sequi, molestiae consectetur? Harum, voluptatum.
+              As leaders in real estate, we aim to 
+leverage our expertise and 
+established presence to provide 
+appealing returns for our investors, 
+regardless of market conditions. It 
+is also possible to achieve 
+substantial financial gains, even 
+without specialized real estate 
+knowledge.
             </p>
             <h2 className="text-base sm:text-lg md:text-xl font-medium mb-6">
               Consult before your next move

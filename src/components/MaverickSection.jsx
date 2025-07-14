@@ -2,7 +2,7 @@ import React from 'react';
 
 const MaverickSection = () => {
   return (
-    <section className="px-4 sm:px-8 lg:px-20 py-12 bg-[#FAFAFA] font-['Urbanist'] my-4">
+    <section id='firm' className="px-4 sm:px-8 lg:px-20 py-12 bg-[#FAFAFA] font-['Urbanist'] my-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-20 lg:gap-32">
 
         {/* Left Side Image */}
@@ -24,8 +24,11 @@ const MaverickSection = () => {
           </h2>
 
           <p className="text-[#656E73] text-base sm:text-lg md:text-2xl mb-8 max-w-md mx-auto md:mx-0">
-            We support our clients at every stage of the buying and selling process, ensuring a
-            seamless and stress-free experience from start to finish.
+            QPIXX consultants assist clients
+in achieving earnings that surpass
+industry standards.
+We are experts who are adept at
+succeeding in today's markets.
           </p>
 
           {/* Stats */}

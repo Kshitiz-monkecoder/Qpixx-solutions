@@ -41,18 +41,20 @@ const OurOfferings = () => {
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#0B1D27] mb-12">
         Our Offerings
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-        {offeringsData.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white hover:bg-[#D9D9D9] shadow-md border border-[#D9D9D9] rounded-lg p-6 flex flex-col items-center justify-center text-center transition-colors duration-300"
-          >
-            <div className="mb-4">{item.icon}</div>
-            <p className="text-sm sm:text-base font-medium text-[#0B1D27]">
-              {item.title}
-            </p>
-          </div>
-        ))}
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6">
+          {offeringsData.map((item, index) => (
+            <div
+              key={index}
+              className="w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] bg-white hover:bg-[#D9D9D9] shadow-md border border-[#D9D9D9] rounded-lg p-6 flex flex-col items-center justify-center text-center transition-colors duration-300"
+            >
+              <div className="mb-4">{item.icon}</div>
+              <p className="text-sm sm:text-base font-medium text-[#0B1D27]">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
