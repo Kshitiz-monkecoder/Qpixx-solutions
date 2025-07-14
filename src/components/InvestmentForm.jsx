@@ -65,15 +65,19 @@ const InvestmentPage = () => {
 
       // Now send email with Cloudinary URL
       await emailjs.send(
-        "service_g8hebjh",
-        "template_p7bol68",
-        {
-          to_name: "Kshitiz",
-          from_name: formData.fullName,
-          message: `New investment submission. Download Excel here: ${data.secure_url}`,
-        },
-        "aaKDxdhJqlS0x0Lm2"
-      );
+  "service_k741yww", // Your EmailJS service ID
+  "template_rnuiaxt", // Your plain-text EmailJS template ID
+  {
+    fullname: formData.fullName,
+    mobile: formData.mobile,
+    amount: formData.amount,
+    city: formData.city,
+    roi: formData.roi,
+    date: new Date().toLocaleString(), // or format it as per your preference
+  },
+  "aaKDxdhJqlS0x0Lm2" // Your public key
+);
+
 
       alert("Form submitted. Excel uploaded and link sent to email.");
     } catch (err) {
