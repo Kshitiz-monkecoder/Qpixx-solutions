@@ -6,9 +6,11 @@ import ScrollCategories from './components/CategorySlide'
 import TalktoQPIXX from './components/TalktoQPIXX'
 import InvestmentForm from './components/InvestmentForm'
 import ClientConfidence from './components/ClientConfidence'
-import WhyChoose from './components/WhyChoose'
 import Testimonial from './components/Testimonials'
 import Footer from './components/Footer'
+import OurOfferings from './components/OurOfferings'
+import TheProcess from './components/TheProcess'
+import WhyChoose from './components/WhyChoose'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,9 +20,11 @@ function App() {
       <Header />
       <Navbar />
       <MaverickSection />
-      <ScrollCategories />
+      {/* <ScrollCategories /> */}
+      <OurOfferings />
       <WhyChoose />
       <TalktoQPIXX />
+      <TheProcess />
       <InvestmentForm />
       <ClientConfidence />
       <Testimonial />

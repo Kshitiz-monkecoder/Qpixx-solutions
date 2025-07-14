@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-300">
             <FaEnvelope className="text-lg text-[#FBBF24]" />
-            <span>info@qpixx.com</span>
+            <span>info@qpixxsolutions.com</span>
           </div>
         </div>
 

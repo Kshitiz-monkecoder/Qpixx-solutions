@@ -1,74 +1,73 @@
 import React from "react";
+import {
+  FaUserFriends,
+  FaMoneyBillWave,
+  FaRupeeSign,
+  FaShieldAlt,
+} from "react-icons/fa";
 
 const features = [
   {
-    title: "1:1 Consulting",
-    image: "/consulting.jpg",
-    description: "Get personalized one-on-one expert advice tailored to your investment goals.",
+    icon: <FaUserFriends className="text-5xl text-[#0B1D27]" />,
+    title: "Dedicated One-on-One Consulting",
+    description:
+      "Experience truly personalized guidance with undivided attention. We never juggle multiple clients simultaneously, ensuring your real estate journey receives our exclusive focus and commitment.",
+    button: "Talk to a Consultant",
   },
   {
+    icon: <FaMoneyBillWave className="text-5xl text-[#0B1D27]" />,
     title: "Zero Upfront Fees",
-    image: "/zero-fee.jpg",
-    description: "You only pay for results—start your journey without any upfront cost.",
+    description:
+      "Pay only for results, not promises. Our unique success-based model means no fees during your buying, selling, or investment advisory process — you pay solely when services are rendered.",
+    button: "Know More",
   },
   {
+    icon: <FaRupeeSign className="text-5xl text-[#0B1D27]" />,
     title: "Save Lakhs in Commission",
-    image: "/save-commission.jpg",
-    description: "Avoid heavy brokerage fees and retain your hard-earned money.",
+    description:
+      "Maximize value with fees up to *50% lower* than industry standards. From first-time buyers to seasoned investors, we ensure more money stays in your pocket without compromising service quality.",
+    button: "View Savings",
   },
   {
+    icon: <FaShieldAlt className="text-5xl text-[#0B1D27]" />,
     title: "Risk-Free Transactions",
-    image: "/risk-free.jpg",
-    description: "Work with verified professionals to ensure secure and smooth investments.",
+    description:
+      "Rest easy with our exhaustive due diligence process. We proactively cross-verify every detail — legal, financial, and structural — long before deals are finalized, transforming uncertainty into confidence.",
+    button: "Our Process",
   },
-  // Example of 5th card
-  // {
-  //   title: "24/7 Support",
-  //   image: "/support.jpg",
-  //   description: "Dedicated assistance throughout your investment journey.",
-  // },
 ];
 
 const WhyChoose = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-12 bg-[#FAFAFA] text-[#0B1D27]">
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-bold mb-2">
+    <section className="py-16 px-4 sm:px-8 lg:px-20 bg-[#FAFAFA]">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#0B1D27]">
           Why Choose Qpixx Consultants?
         </h2>
-        <p className="text-[#656E73] mt-2 text-base sm:text-lg">
+        <p className="text-[#ED8732] italic text-lg mt-2 font-medium">
           Your Vision, Our Expertise — Partnership Beyond Transactions
         </p>
       </div>
 
-      {/* Responsive Centered Grid */}
-      <div
-        className={`
-          grid gap-6
-          sm:grid-cols-2
-          lg:grid-cols-4
-          justify-center
-        `}
-      >
-        {features.map((item, index) => (
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        {features.map((feature, idx) => (
           <div
-            key={index}
-            className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 max-w-sm mx-auto"
+            key={idx}
+            className="bg-white border border-[#D9D9D9] rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between text-center h-full min-h-[420px]"
           >
-            <div className="relative w-full h-[200px] overflow-hidden group">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="object-cover w-full h-full transition duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 flex items-center justify-center">
-                <h3 className="text-lg sm:text-xl font-semibold text-white text-center px-2">
-                  {item.title}
-                </h3>
-              </div>
+            <div className="flex flex-col items-center">
+              {feature.icon}
+              <h3 className="mt-4 text-lg font-semibold text-[#0B1D27]">
+                {feature.title}
+              </h3>
+              <p className="mt-3 text-sm sm:text-base text-[#656E73] leading-relaxed">
+                {feature.description}
+              </p>
             </div>
-            <div className="p-4 text-sm sm:text-base text-[#656E73]">
-              {item.description}
+            <div className="mt-6">
+              <button className="px-4 py-2 border border-[#0B1D27] text-[#0B1D27] text-sm sm:text-base rounded-md hover:bg-[#0B1D27] hover:text-white transition-colors duration-300">
+                {feature.button}
+              </button>
             </div>
           </div>
         ))}
