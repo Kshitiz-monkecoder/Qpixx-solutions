@@ -50,7 +50,7 @@ const InvestmentPage = () => {
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12 space-y-8">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0B1D27] leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold uppercase text-[#0B1D27] leading-tight">
             Where Expectations meet <br />
             <span className="text-[#656E73] font-light">Reality</span>
           </h2>
@@ -107,15 +107,15 @@ const InvestmentPage = () => {
             <input
               type="range"
               name="roi"
-              min="5"
-              max="35"
-              step="5"
+              min="3"
+              max="20"
+              step="1"
               value={formData.roi}
               onChange={handleChange}
               className="w-full accent-[#0B1D27]"
             />
             <div className="flex justify-between text-xs text-[#656E73] mt-1">
-              {[5, 10, 15, 20, 25, 30, 35].map((val) => (
+              {[3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20  ].map((val) => (
                 <span key={val}>{val}%</span>
               ))}
             </div>

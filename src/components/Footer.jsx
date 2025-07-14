@@ -14,11 +14,9 @@ const Footer = () => {
 
         {/* Left: Logo + Description + Social */}
         <div className="space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-bold leading-tight tracking-wide">
-            Qpixx <br />
-            <span className="text-4xl sm:text-5xl font-extrabold text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white  tracking-wide">
+            QPIXX <br />
               Solutions
-            </span>
           </h1>
           <p className="text-sm text-gray-300 max-w-xs">
             Building value where expectations meet reality. Let’s create something remarkable together.

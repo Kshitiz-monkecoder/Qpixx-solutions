@@ -19,7 +19,7 @@ const Properties = () => {
         </div>
 
         <p className="text-lg leading-relaxed max-w-4xl">
-          At Qpixx Solutions, we don’t just deal in real estate—we deliver experiences tailored to your
+          At <span className='font-extrabold'>QPIXX</span> Solutions, we don’t just deal in real estate—we deliver experiences tailored to your
           vision. Whether you're hunting for your dream home, investing in high-return assets, or selling
           to upgrade your lifestyle, our expert team turns every step into a smooth, strategic move.
           With deep market insights, personalized advice, and a passion for people over property, we’re

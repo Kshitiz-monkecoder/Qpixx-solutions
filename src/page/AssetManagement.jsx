@@ -20,7 +20,7 @@ const AssetManagement = () => {
 
         <p className="text-lg leading-relaxed max-w-4xl">
           Own property. We’ll power it. <br /><br />
-          At Qpixx Solutions, we don’t just buy and sell—we manage over ₹250 crore+ in real estate
+          At <span className='font-extrabold'>QPIXX</span>, we don’t just buy and sell—we manage over ₹250 crore+ in real estate
           assets with precision and care. From luxury homes to high-value commercial spaces, our Asset
           Management service ensures your property earns more and runs smoother—without you lifting a finger.
         </p>

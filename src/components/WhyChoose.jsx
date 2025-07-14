@@ -23,9 +23,9 @@ const features = [
   },
   {
     icon: <FaRupeeSign className="text-4xl sm:text-5xl text-[#0B1D27]" />,
-    title: "Save Lakhs in Commission",
+    title: "Money Saver Deals",
     description:
-      "Maximize value with fees up to *50% lower* than industry standards. From first-time buyers to seasoned investors, we ensure more money stays in your pocket without compromising service quality.",
+      "Minimize value on success fee discounting, lower than industry standards. For first time buyers to seasoned investors, we help you to save your every single penny without compromising service quality",
     button: "View Savings",
   },
   {
@@ -42,7 +42,7 @@ const WhyChoose = () => {
     <section className="py-12 px-4 sm:px-8 lg:px-20 bg-[#FAFAFA]">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl sm:text-4xl font-bold text-[#0B1D27]">
-          Why Choose Qpixx Consultants?
+          Why Choose QPIXX Consultants?
         </h2>
         <p className="text-[#656E73] italic text-base sm:text-lg mt-2 font-medium">
           Your Vision, Our Expertise — Partnership Beyond Transactions

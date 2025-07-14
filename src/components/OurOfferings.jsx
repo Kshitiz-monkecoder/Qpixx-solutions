@@ -19,19 +19,18 @@ import {
 
 const offeringsData = [
   { title: "Sustainability Solutions", icon: <FaLeaf className="text-[#0B1D27] text-3xl" /> },
-  { title: "Renewable Energy Solutions", icon: <FaSolarPanel className="text-[#0B1D27] text-3xl" /> },
   { title: "Infrastructure & Government", icon: <FaCity className="text-[#0B1D27] text-3xl" /> },
   { title: "Developers & Funds Advisory", icon: <FaUserTie className="text-[#0B1D27] text-3xl" /> },
   { title: "Industrial Services", icon: <FaIndustry className="text-[#0B1D27] text-3xl" /> },
   { title: "Retail & Brands Advisory", icon: <FaShoppingBag className="text-[#0B1D27] text-3xl" /> },
-  { title: "Hospitality & Tourism Solutions", icon: <FaHotel className="text-[#0B1D27] text-3xl" /> },
+  { title: "Hotels & Resort Project Acquisition ", icon: <FaHotel className="text-[#0B1D27] text-3xl" /> },
   { title: "Housing Services", icon: <FaHome className="text-[#0B1D27] text-3xl" /> },
   { title: "Data Centre Research & Advisory", icon: <FaDatabase className="text-[#0B1D27] text-3xl" /> },
   { title: "Business Consulting", icon: <FaBriefcase className="text-[#0B1D27] text-3xl" /> },
   { title: "Business Intelligence", icon: <FaChartBar className="text-[#0B1D27] text-3xl" /> },
   { title: "Urban Development & Rejuvenation", icon: <FaBuilding className="text-[#0B1D27] text-3xl" /> },
   { title: "Construction Planning & Strategy", icon: <FaTools className="text-[#0B1D27] text-3xl" /> },
-  { title: "Education & Institutional Investment Advisory", icon: <FaGraduationCap className="text-[#0B1D27] text-3xl" /> },
+  { title: "Land Acquisition", icon: <FaGraduationCap className="text-[#0B1D27] text-3xl" /> },
   { title: "Transactions and Bid Advisory", icon: <FaFileContract className="text-[#0B1D27] text-3xl" /> },
 ];
 

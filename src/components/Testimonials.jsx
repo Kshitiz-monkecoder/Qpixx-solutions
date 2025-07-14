@@ -2,28 +2,28 @@ import React, { useState, useEffect } from "react";
 
 const testimonials = [
   {
-    name: "Emily Carter",
-    location: "Austin, TX",
+    name: "Rishabh Parikh",
+    location: "Delhi, India",
     image: "/emily.jpg",
     feedback:
-      "Buying my first home felt overwhelming, but this team made the process smooth and stress-free. Their market knowledge and attention to detail gave me complete confidence. I'm now a proud homeowner!",
-    signature: "Emily Carter"
+      "I cannot BELIEVE how simple the QPIXX Services was in helping me to find my first real estate buying in commercial property and how amazing the customer support is.",
+    signature: "Rishabh Parikh"
   },
   {
-    name: "David Thompson",
-    location: "Scottsdale, AZ",
+    name: "Girish Chaudhary",
+    location: "VP-IT",
     image: "/david.jpg",
     feedback:
-      "From the first consultation to closing day, everything was handled professionally. I appreciated the transparency and constant communication throughout. Highly recommended for serious investors.",
-    signature: "David Thompson"
+      "I hesitated in the beginning, but as QPIXX guided me in buying a dream home, it was GENUINELY a true advisory Firm. Thank you for making it happen.",
+    signature: "Girish Chaudhary"
   },
   {
-    name: "Monica Reyes",
-    location: "Miami, FL",
+    name: "Dr. Reena Sanwar",
+    location: "",
     image: "/monica.jpg",
     feedback:
-      "I sold my condo in just 8 days thanks to their strategy and marketing. The experience was seamless and exceeded my expectations. I'll definitely work with them again in the future.",
-    signature: "Monica Reyes"
+      "After my retirement, I opt for a rental solution in real estate. Hell lot of surprises and fake commitment in the market. Then QPIXX help me to make my savings into genuine real estate investment. Returns and appreciation were taken in a calculative and secure way. Thanks to their detailed research and services support. Much Appreciated.",
+    signature: "Dr. Reena Sanwar"
   }
 ];
 
@@ -65,7 +65,7 @@ const Testimonial = () => {
     <section className="animate-fadeIn relative py-20 px-4 sm:px-10 bg-[#FAFAFA] font-['Urbanist'] text-[#0B1D27] overflow-hidden">
 
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-6">What Our Clients Say</h2>
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 uppercase">What Our Clients Say</h2>
         <p className="text-[#656E73] mb-14 text-base sm:text-lg">
           Real stories from real people we've helped.
         </p>
