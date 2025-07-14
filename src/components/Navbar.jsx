@@ -48,7 +48,8 @@ const Navbar = () => {
       Book Consultation <ArrowRight className="w-4 h-4" />
     </a>
     <a
-      href="#brochure"
+      href="https://drive.usercontent.google.com/u/0/uc?id=1Qm0NgR54D-R2cdBvIZHOVF6uXp5I-p3N&export=download"
+      target="_blank"
       className="border border-white text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#0B1D27] transition text-center"
     >
       Download Brochure
