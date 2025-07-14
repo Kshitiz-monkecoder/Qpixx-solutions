@@ -6,7 +6,6 @@ const Properties = () => {
   return (
     <>
       <Header />
-      <Navbar />
 
       {/* Hero Image */}
       <div className="w-full h-64 md:h-72 bg-cover bg-center" style={{ backgroundImage: `url('page-header.jpg')` }}></div>
@@ -30,8 +29,8 @@ const Properties = () => {
         <p className="mt-6 text-lg">Ready to make your next move your best one yet?</p>
 
         <a href="/contact-us">
-          <button className="mt-4 bg-[#0B1D27] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
-            Book Your Free Consultation
+          <button className="bg-[#0B1D27] cursor-pointer mt-5 text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
+            Book a Consultation
           </button>
         </a>
       </section>

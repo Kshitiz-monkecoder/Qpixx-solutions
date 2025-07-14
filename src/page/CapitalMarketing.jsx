@@ -6,7 +6,6 @@ const CapitalMarketing = () => {
   return (
     <>
       <Header />
-      <Navbar />
 
       {/* Hero Image */}
       <div className="w-full h-64 md:h-72 bg-cover bg-center" style={{ backgroundImage: `url('page-header.jpg')` }}>
@@ -41,6 +40,11 @@ const CapitalMarketing = () => {
             <li>$25–30 billion – Estimated REIT market size in India by 2030.</li>
           </ul>
         </div>
+        <a href="/contact-us">
+          <button className="bg-[#0B1D27] cursor-pointer mt-5 text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
+            Book a Consultation
+          </button>
+        </a>
       </section>
     </>
   )

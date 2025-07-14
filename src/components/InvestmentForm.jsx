@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import * as XLSX from "xlsx";
 import emailjs from "emailjs-com";
 
 const InvestmentPage = () => {
@@ -10,6 +9,8 @@ const InvestmentPage = () => {
     city: "",
     roi: 5,
   });
+
+  const [submissionSuccess, setSubmissionSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,67 +23,25 @@ const InvestmentPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Create Excel file
-    const worksheet = XLSX.utils.json_to_sheet([formData]);
-    const workbook = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(workbook, worksheet, "InvestmentData");
-
-    const excelBinary = XLSX.write(workbook, {
-      bookType: "xlsx",
-      type: "binary",
-    });
-
-    function s2ab(s) {
-      const buf = new ArrayBuffer(s.length);
-      const view = new Uint8Array(buf);
-      for (let i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xff;
-      return buf;
-    }
-
-    const excelBlob = new Blob([s2ab(excelBinary)], {
-      type:
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    });
-
-    // Upload to Cloudinary
-    const form = new FormData();
-    form.append("file", excelBlob);
-    form.append("upload_preset", "qpixx_upload"); // Replace with actual preset
-    form.append("cloud_name", "dv95ghhvq"); // Replace with your cloud name
-
     try {
-      const uploadRes = await fetch(
-        `https://api.cloudinary.com/v1_1/dv95ghhvq/auto/upload`,
+      await emailjs.send(
+        "service_k741yww",
+        "template_rnuiaxt",
         {
-          method: "POST",
-          body: form,
-        }
+          fullname: formData.fullName,
+          mobile: formData.mobile,
+          amount: formData.amount,
+          city: formData.city,
+          roi: formData.roi,
+          date: new Date().toLocaleString(),
+        },
+        "dZ2b6fP_6bSVLqBos"
       );
 
-      const data = await uploadRes.json();
-
-      if (!data.secure_url) throw new Error("Upload failed");
-
-      // Now send email with Cloudinary URL
-      await emailjs.send(
-  "service_k741yww", // Your EmailJS service ID
-  "template_rnuiaxt", // Your plain-text EmailJS template ID
-  {
-    fullname: formData.fullName,
-    mobile: formData.mobile,
-    amount: formData.amount,
-    city: formData.city,
-    roi: formData.roi,
-    date: new Date().toLocaleString(), // or format it as per your preference
-  },
-  "aaKDxdhJqlS0x0Lm2" // Your public key
-);
-
-
-      alert("Form submitted. Excel uploaded and link sent to email.");
+      setSubmissionSuccess(true);
     } catch (err) {
       console.error(err);
-      alert("Failed to submit or upload.");
+      alert("Failed to submit.");
     }
   };
 
@@ -165,10 +124,18 @@ const InvestmentPage = () => {
             </div>
           </div>
 
+          {/* ✅ Success Message */}
+          {submissionSuccess && (
+            <div className="text-[#656E73] font-medium text-center mt-4">
+              Your query has been sent to Qpixx Solutions. You may expect a call from us shortly.
+            </div>
+          )}
+
           <div className="text-center">
             <button
               type="submit"
               className="bg-[#0B1D27] hover:bg-[#112f3a] text-white px-8 py-3 rounded-full"
+              disabled={submissionSuccess}
             >
               Send Submission
             </button>

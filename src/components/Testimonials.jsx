@@ -62,22 +62,7 @@ const Testimonial = () => {
   }, [index]);
 
   return (
-    <section className="relative py-20 px-4 sm:px-10 bg-[#FAFAFA] font-['Urbanist'] text-[#0B1D27] overflow-hidden">
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.5s ease-out forwards;
-        }
-      `}</style>
+    <section className="animate-fadeIn relative py-20 px-4 sm:px-10 bg-[#FAFAFA] font-['Urbanist'] text-[#0B1D27] overflow-hidden">
 
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-bold mb-6">What Our Clients Say</h2>

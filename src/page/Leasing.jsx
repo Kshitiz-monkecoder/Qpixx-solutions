@@ -6,7 +6,6 @@ const Leasing = () => {
   return (
     <>
       <Header />
-      <Navbar />
 
       {/* Hero Image */}
       <div className="w-full h-64 md:h-72 bg-cover bg-center" style={{ backgroundImage: `url('page-header.jpg')` }}></div>
@@ -26,7 +25,7 @@ const Leasing = () => {
         </p>
 
         <a href="/contact-us">
-          <button className="bg-[#0B1D27] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
+          <button className="bg-[#0B1D27] cursor-pointer text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
             Book a Consultation
           </button>
         </a>

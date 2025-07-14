@@ -23,11 +23,6 @@ const Footer = () => {
           <p className="text-sm text-gray-300 max-w-xs">
             Building value where expectations meet reality. Let’s create something remarkable together.
           </p>
-          <div className="flex space-x-5 pt-2 text-xl text-white">
-            <a href="#" aria-label="Instagram" className="hover:text-[#E1306C]"><FaInstagram /></a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-[#0077B5]"><FaLinkedin /></a>
-            <a href="#" aria-label="WhatsApp" className="hover:text-[#25D366]"><FaWhatsapp /></a>
-          </div>
         </div>
 
         {/* Middle: Contact Info */}
@@ -35,7 +30,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-white">Get in Touch</h3>
           <div className="flex items-center gap-3 text-sm text-gray-300">
             <FaPhoneAlt className="text-lg text-[#38BDF8]" />
-            <span>+1 234 567 890</span>
+            <span>+91 88600 66868</span>
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-300">
             <FaEnvelope className="text-lg text-[#FBBF24]" />

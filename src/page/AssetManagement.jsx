@@ -6,7 +6,6 @@ const AssetManagement = () => {
   return (
     <>
       <Header />
-      <Navbar />
 
       {/* Hero Image */}
       <div className="w-full h-64 md:h-72 bg-cover bg-center" style={{ backgroundImage: `url('page-header.jpg')` }}></div>
@@ -25,6 +24,12 @@ const AssetManagement = () => {
           assets with precision and care. From luxury homes to high-value commercial spaces, our Asset
           Management service ensures your property earns more and runs smoother—without you lifting a finger.
         </p>
+
+        <a href="/contact-us">
+          <button className="bg-[#0B1D27] cursor-pointer text-white mt-5 px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
+            Book a Consultation
+          </button>
+        </a>
       </section>
     </>
   )
