@@ -13,11 +13,15 @@ const Header = () => {
   }, [location.pathname])
 
   const navLinks = [
-    { label: 'Capital Marketing', path: '/capital-marketing' },
-    { label: 'Leasing', path: '/leasing' },
-    { label: 'Properties', path: '/properties' },
     { label: 'The Firm', path: '/#firm' },
+    { label: 'Properties', path: '/properties' },
+    { label: 'Capital Marketing', path: '/capital-marketing' },
     { label: 'Asset Management', path: '/asset-management' },
+    { label: 'Leasing', path: '/leasing' },
+    { label: 'Project Management', path: '/project-management' },
+    
+    
+    
   ]
 
   const isActive = (path) => {
@@ -28,8 +32,8 @@ const Header = () => {
     <header className="bg-[#FAFAFA] text-[#0B1D27] px-6 py-4 pt-6 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
-          <img src="/Logo_dark.png" alt="TerraSpace Logo" className="h-16 w-auto" />
+        <div className="flex items-center  cursor-pointer" onClick={() => navigate('/')}>
+          <img src="/Logo_final.png" alt="TerraSpace Logo" className="h-16 w-auto" />
         </div>
 
         {/* Desktop Nav Links */}
@@ -63,8 +67,8 @@ const Header = () => {
 
         {/* CTA Button */}
         <a
-          href="/contact-us"
-          className="hidden md:inline-flex items-center space-x-2 bg-[#0B1D27] text-white text-base font-medium px-5 py-2 rounded-full hover:bg-[#0d2530] transition"
+          href="https://calendly.com/qpixxsolutions/30min?month=2025-07"
+          className="hidden cursor-pointer md:inline-flex items-center space-x-2 bg-[#0B1D27] text-white text-base font-medium px-5 py-2 rounded-full hover:bg-[#0d2530] transition"
         >
           <span>Let’s Talk</span>
           <ArrowUpRight className="w-5 h-5" />
@@ -104,8 +108,9 @@ const Header = () => {
             )
           )}
           <a
-            href="/contact-us"
-            className="mt-2 inline-flex items-center space-x-2 bg-[#0B1D27] text-white px-5 py-2 rounded-full hover:bg-[#0d2530] transition"
+            href="https://calendly.com/qpixxsolutions/30min?month=2025-07"
+            target="_blank"
+            className="mt-2 cursor-pointer inline-flex items-center space-x-2 bg-[#0B1D27] text-white px-5 py-2 rounded-full hover:bg-[#0d2530] transition"
           >
             <span>Let’s Talk</span>
             <ArrowUpRight className="w-4 h-4" />

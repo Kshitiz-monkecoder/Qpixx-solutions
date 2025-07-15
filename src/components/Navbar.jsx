@@ -42,8 +42,9 @@ const Navbar = () => {
   {/* Buttons */}
   <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
     <a
-      href="#consultation"
-      className="bg-white text-[#0B1D27] px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition inline-flex items-center justify-center gap-1"
+      href="https://calendly.com/qpixxsolutions/30min?month=2025-07"
+      target="_blank"
+      className="bg-white cursor-pointer text-[#0B1D27] px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition inline-flex items-center justify-center gap-1"
     >
       Book Consultation <ArrowRight className="w-4 h-4" />
     </a>

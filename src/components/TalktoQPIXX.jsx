@@ -22,13 +22,16 @@ const TalktoQPIXX = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-2">
             Talk to QPIXX
           </h1>
-          <p className="text-[#656E73] text-base md:text-2xl">
+          <p className="text-[#656E73] text-base font-semibold md:text-2xl">
             You'll be connected with an expert <br className="hidden sm:inline" /> no pressure or obligations.
           </p>
-
-          <button className="mt-4 bg-[#0B1D27] cursor-pointer hover:bg-[#112f3a] text-white py-2 px-6 md:py-3 md:px-8 md:text-xl text-base rounded-full shadow-md transition-all duration-300">
+          <a href="https://calendly.com/qpixxsolutions/30min?month=2025-07"
+          className="cusror-pointer"
+          target="_blank"
+          ><button className="mt-4 bg-[#0B1D27] cursor-pointer hover:bg-[#112f3a] text-white py-2 px-6 md:py-3 md:px-8 md:text-xl text-base rounded-full shadow-md transition-all duration-300">
             Book Consultation
-          </button>
+          </button></a>
+          
         </div>
       </div>
     </section>

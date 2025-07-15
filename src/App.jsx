@@ -10,6 +10,7 @@ import CapitalMarketing from './page/CapitalMarketing'
 import Leasing from './page/Leasing'
 import Properties from './page/Properties.jsx'
 import AssetManagement from './page/AssetManagement'
+import ProjectManagement from './page/ProjectManagementConsulting.jsx'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/leasing" element={<Leasing />} />
         <Route path="/properties" element={<Properties />} />
         <Route path="/asset-management" element={<AssetManagement />} />
+        <Route path="/project-management" element={<ProjectManagement />} />
         {/* You can add more routes here */}
       </Routes>
     </Router>

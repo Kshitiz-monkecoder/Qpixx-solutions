@@ -24,10 +24,10 @@ const ContactUs = () => {
             <p>
               <strong>Phone:</strong>{' '}
               <a
-                href="tel:+918860066868"
+                href="tel:+918510917180"
                 className="text-blue-600 underline hover:text-blue-800"
               >
-                +91 88600 66868
+                +91 8510917180
               </a>
             </p>
           </div>

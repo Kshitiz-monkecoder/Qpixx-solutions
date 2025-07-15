@@ -28,7 +28,10 @@ const Properties = () => {
 
         <p className="mt-6 text-lg">Ready to make your next move your best one yet?</p>
 
-        <a href="/contact-us">
+         <a href="https://calendly.com/qpixxsolutions/30min?month=2025-07"
+          className="cusror-pointer"
+          target="_blank"
+          >
           <button className="bg-[#0B1D27] cursor-pointer mt-5 text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d2530] transition">
             Book a Consultation
           </button>

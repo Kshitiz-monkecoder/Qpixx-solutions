@@ -37,7 +37,7 @@ const TheProcess = () => {
     <section className="py-16 px-4 sm:px-8 lg:px-20 bg-[#FAFAFA] font-['Urbanist']">
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#0B1D27]">The Process</h2>
-        <p className="italic text-[#656e73] mt-2 text-base sm:text-lg">
+        <p className="italic text-[#656e73] mt-2 text-base font-semibold sm:text-lg">
           Your Blueprint for Profitable Real Estate Decisions
         </p>
       </div>
@@ -58,7 +58,7 @@ const TheProcess = () => {
         ))}
       </div>
 
-      <p className="text-center text-[#656e73] italic mt-12 px-4 text-sm sm:text-base max-w-4xl mx-auto">
+      <p className="text-center text-[#656e73] italic mt-12 px-4 text-2xl sm:text-4xl max-w-4xl mx-auto">
         "Our partnership continues post–transaction with portfolio optimization insights — because your growth is our ongoing mission."
       </p>
     </section>

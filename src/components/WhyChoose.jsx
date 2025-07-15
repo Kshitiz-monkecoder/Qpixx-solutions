@@ -44,7 +44,7 @@ const WhyChoose = () => {
         <h2 className="text-2xl sm:text-4xl font-bold text-[#0B1D27]">
           Why Choose QPIXX Consultants?
         </h2>
-        <p className="text-[#656E73] italic text-base sm:text-lg mt-2 font-medium">
+        <p className="text-[#656E73] italic text-base sm:text-lg mt-2 font-semibold">
           Your Vision, Our Expertise — Partnership Beyond Transactions
         </p>
       </div>
@@ -65,9 +65,13 @@ const WhyChoose = () => {
               </p>
             </div>
             <div className="mt-5 sm:mt-6">
-              <button className="px-4 py-2 border border-[#0B1D27] text-[#0B1D27] text-sm sm:text-base rounded-md hover:bg-[#0B1D27] hover:text-white transition-colors duration-300">
+              <a href="https://calendly.com/qpixxsolutions/30min?month=2025-07" 
+                  target="_blank"
+                className="cursor-pointer">
+              <button className="px-4 py-2 border cursor-pointer border-[#0B1D27] text-[#0B1D27] text-sm sm:text-base rounded-md hover:bg-[#0B1D27] hover:text-white transition-colors duration-300">
                 {feature.button}
               </button>
+              </a>
             </div>
           </div>
         ))}
