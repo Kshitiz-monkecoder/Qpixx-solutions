@@ -67,7 +67,7 @@ const Footer = () => {
 
       {/* Bottom Note */}
       <div className="mt-10 text-center text-xs text-gray-400 tracking-wide">
-        © {new Date().getFullYear()} Qpixx Solutions Private Limited. All rights reserved.
+        © {new Date().getFullYear()} Qpixx Solutions Private Limited
       </div>
     </footer>
   );

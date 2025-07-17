@@ -23,7 +23,7 @@ const TalktoQPIXX = () => {
             Talk to QPIXX
           </h1>
           <p className="text-[#656E73] text-base font-semibold md:text-2xl">
-            You'll be connected with an expert <br className="hidden sm:inline" /> no pressure or obligations.
+            You'll be connected with an Expert. <br className="hidden sm:inline" /> Feel free to explore the opportunities.
           </p>
           <a href="https://calendly.com/qpixxsolutions/30min?month=2025-07"
           className="cusror-pointer"

@@ -8,9 +8,9 @@ const MaverickSection = () => {
         {/* Left Side Image */}
         <div className="flex-shrink-0 w-full md:w-1/2 md:flex md:justify-center md:items-center">
   <img
-    src="/maverick-image.jpg"
+    src="/WhatsApp Image 2025-07-16 at 18.47.02_9aab634a.jpg"
     alt="Maverick"
-    className="w-full md:w-1/2 h-auto rounded-xl object-cover shadow-lg"
+    className="w-full md:w-3/4 h-auto rounded-xl object-cover shadow-lg"
   />
 </div>
 

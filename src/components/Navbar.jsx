@@ -21,12 +21,12 @@ const Navbar = () => {
         {/* Content */}
         <div className="relative z-10 min-h-[90vh] flex items-center px-4 sm:px-6 py-10 sm:py-12">
           <div className="w-full max-w-4xl text-white text-center md:text-left md:ml-20">
-  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-    Real Estate <br className="hidden sm:inline" /> Made Easy.
+  <h1 className="text-3xl sm:text-4xl md:text-5xl uppercase font-bold leading-tight mb-4">
+  We made <br className="hidden sm:inline" /> Real Estate Easy.
   </h1>
   
   <div className="mx-auto md:mx-0 max-w-xl">
-    <p className="text-[#D9D9D9] mb-4 text-sm sm:text-base leading-relaxed">
+    <p className="text-[#D9D9D9] mb-4 text-sm sm:text-xl font-semibold leading-relaxed">
       As leaders in real estate, we aim to leverage our expertise and 
       established presence to provide appealing returns for our investors, 
       regardless of market conditions. It is also possible to achieve 
@@ -35,7 +35,7 @@ const Navbar = () => {
     </p>
   </div>
 
-  <h2 className="text-base sm:text-lg md:text-xl font-medium mb-6">
+  <h2 className="text-base sm:text-lg md:text-2xl font-medium mb-6">
     Consult before your next move
   </h2>
 
